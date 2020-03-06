@@ -134,6 +134,12 @@
 			            '#f9963b',
 			            
 			        ]
+			     	editor.customConfig.pasteFilterStyle = false;//复制带有原来的样式
+			     	editor.customConfig.pasteIgnoreImg = false;//不忽略复制带来的图
+			     	        
+			     	        editor.customConfig.pasteTextHandle = function (content) {
+			     	        	return content ;
+			     	        }
 			        editor.create()//使用了create方法
 			     
     		</script>
